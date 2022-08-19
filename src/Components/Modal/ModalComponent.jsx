@@ -2,7 +2,7 @@ import React from "react";
 import Modal from 'react-bootstrap/Modal'
 import { Button } from 'react-bootstrap';
 
-function Modal2Component(props) {
+function ModalComponent(props) {
     return (
         <Modal
             {...props}
@@ -25,4 +25,4 @@ function Modal2Component(props) {
     );
 }
 
-export { Modal2Component }
+export { ModalComponent }
