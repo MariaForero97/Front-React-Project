@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-img2{
+    width:50%;  
+    height: 625px;
+    float: left;
+    overflow: hidden;
+    padding: 0;
+    margin-top: -375px;
+    border: 0;
+
+}
+
+
+.container-login{
+    
+    width: 380px;
+    height: 100px;
+    border: 1px groove;
+    border-radius: 15px;
+    padding: 20px 25px 370px 25px;
+    margin: 70px 575px -80px 10px;
+    margin-inline: 850px;
+    
+}
+
+.container-img{
+    padding: 0;
+    margin: 0 5px;
+}
+
+.img-Solarise-logo{
+    width:300px;  
+    height:300px;
+    margin-inline:980px;
+    padding: 20px;
+    float: left;
+    margin-top: -250px;
+    border: 0;
+    
+}
+
+
