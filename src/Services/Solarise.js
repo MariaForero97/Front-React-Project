@@ -5,6 +5,8 @@ import LoginComponent from '../Components/Login/LoginComponent';
 import history from '../history';
 import { ModalComponent } from "../Components/Modal/ModalComponent";
 import { AppContext } from '../Providers/AppProvider';
+import { ProvidersComponent } from '../Components/Views/Providers/ProvidersComponent';
+import { SupplierProvider } from '../Providers/SupplierProvider';
 
 function Solarise() {
 
@@ -20,26 +22,29 @@ function Solarise() {
     <React.Fragment>
       <BrowserRouter history={history}>
         <Switch>
-          {(Object.entries(userLogged).length < 1 &&
+        {((userLogged).length < 1 &&
             < Route exact path="/">
               <Redirect to="/login" />
             </Route>
           )}
-          {(Object.entries(userLogged).length > 2 &&
+          
             < Route exact path="/">
               <Redirect to="/inicio" />
             </Route>
-          )}
+          
 
           <Route exact path="/login"  >
             <LoginComponent />
           </Route>
 
-          {(Object.entries(userLogged).length > 2 &&
+          
             <Route exact path="/inicio"  >
-              <HeaderComponent />
+              <SupplierProvider>
+                <ProvidersComponent />
+              </SupplierProvider>
+              
             </Route>
-          )}
+          
         </Switch>
       </BrowserRouter>
 

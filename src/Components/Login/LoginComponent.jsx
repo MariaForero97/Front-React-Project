@@ -36,7 +36,8 @@ export default function LoginComponent() {
     function handleSubmit(event) {
 
         event.preventDefault();
-        getUserMain({
+        window.location.href = "/inicio";
+        /*getUserMain({
             "username": userLogin,
             "password": password,
         }).then((response) => {
@@ -53,7 +54,7 @@ export default function LoginComponent() {
             setOpenModalTitle("Error");
             setOpenModalInfo(true);
             setModalInfo(error.response ? error.response.data.message : "Error desconocido.");
-        });
+        });*/
     }
 
     return (
